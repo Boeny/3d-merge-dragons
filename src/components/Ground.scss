@@ -1,0 +1,20 @@
+.ground {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    background: #d2f3d8;
+    width: calc(45px * 10);
+
+    .row {
+        display: flex;
+
+        .col {
+            width: 45px;
+            height: 45px;
+            border: 1px solid #bfa9a9;
+            text-align: center;
+            padding: 15px 0;
+            box-sizing: border-box;
+        }
+    }
+}

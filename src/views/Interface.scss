@@ -1,0 +1,24 @@
+.interface {
+    position: fixed;
+    z-index: 1;
+    width: 50px;
+    height: 150px;
+
+    .rotationX {
+        position: relative;
+        width: 10px;
+        height: 130px;
+        background: #e0e0e0;
+        border: 1px solid #a7a7a7;
+
+        .slider {
+            cursor: pointer;
+            position: absolute;
+            width: 23px;
+            height: 10px;
+            background: #e3efff;
+            border: 1px solid #a7a7a7;
+            left: -7px;
+        }
+    }
+}
