@@ -60,6 +60,13 @@ export class Interface extends React.Component<IProps, IState> {
                         onMouseDown={e => e.button === 0 ? this.onDragStart(e.clientY) : undefined}
                     />
                 </div>
+                <div className="rotationY">
+                    <div
+                        className="slider"
+                        style={{ top: `${this.state.value * (this.props.max - this.props.min) / 100}%` }}
+                        onMouseDown={e => e.button === 0 ? this.onDragStart(e.clientY) : undefined}
+                    />
+                </div>
             </div>
         );
     }
