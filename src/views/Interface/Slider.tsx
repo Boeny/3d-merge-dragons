@@ -54,12 +54,13 @@ export class Slider extends React.Component<IProps, IState> {
         if (this.mouseMoveWaiting) {
             return;
         }
+        if (this.dragStart === null) {
+            return;
+        }
         this.mouseMoveWaiting = true;
         setTimeout(() => this.mouseMoveWaiting = false, 50);
 
-        if (this.dragStart !== null) {
-            this.onChange(this.Koef * (y - this.MIN) + this.props.min);
-        }
+        this.onChange(this.Koef * (y - this.MIN) + this.props.min);
     }
 
     render() {
